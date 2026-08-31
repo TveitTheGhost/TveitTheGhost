@@ -37,13 +37,14 @@ My work lives in private repositories while I build it out. This profile is the 
 
 ### `>` arsenal
 
-Ten tools I've designed and built, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them on request.
+Thirteen tools I've designed and built, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them on request.
 
 **🛡️ Detection & Coverage**
 | Project | What it does |
 | :-- | :-- |
 | **detection-pipeline** | Detection-as-code: 20+ Sigma rules as unit-tested software, auto-converted to Splunk, Sentinel & Defender. |
 | **attack-coverage** | Threat-informed gap analysis — which of an adversary's ATT&CK techniques you *can't* see, as a Navigator heatmap. |
+| **sigma-linter** | Grades detection rules A–F on quality, ATT&CK mapping, and breadth — keeps the rule library healthy. |
 | **kql-linter** | Catches broken or dangerously-broad SIEM queries (KQL/SPL) before they ship. |
 
 **🔎 Threat Intel & Incident Response**
@@ -52,6 +53,7 @@ Ten tools I've designed and built, grouped by what they do. Repositories are pri
 | **ioc-extractor** | Turns a threat report into clean, de-fanged indicators + ATT&CK techniques. |
 | **log-normalizer** | Mixed, messy logs of any shape → one clean, ECS-aligned schema. |
 | **incident-timeline** | Normalized events → a reconstructed timeline that flags attack sequences. |
+| **beacon-detector** | Finds malware C2 by spotting regular-interval traffic — behavioral, no signatures. |
 
 **🟣 Offense & Validation**
 | Project | What it does |
@@ -60,9 +62,10 @@ Ten tools I've designed and built, grouped by what they do. Repositories are pri
 | **attack-range** | Instrumented lab-as-code: free local Docker range + a guardrailed AWS Terraform range that can't overspend or expose itself. |
 | **iam-pathfinder** | Finds AWS IAM privilege-escalation paths by graph traversal — the chains that quietly lead to admin. |
 
-**🧬 Malware Analysis**
+**☁️ Cloud & Malware**
 | Project | What it does |
 | :-- | :-- |
+| **cloud-audit** | CSPM-lite — scans an AWS account for public buckets, open ports, MFA gaps & more, each with a fix. |
 | **yara-tester** | Write malware-detection signatures *and unit-test them* — a dependency-free YARA-subset engine. |
 
 <sub>One coherent loop: **intel → detection → attack → validation**, on infrastructure built to be safe by default. Every tool ships with tests, CI, and a "what it does *not* do" section.</sub>
@@ -89,7 +92,7 @@ Ten tools I've designed and built, grouped by what they do. Repositories are pri
 
 ```text
 [ in progress ]  Studying for CompTIA Security+
-[ building    ]  10 defensive tools shipped and counting — each tested end to end
+[ building    ]  13 defensive tools shipped and counting — each tested end to end
 [ learning    ]  Deeper SIEM query fluency (SPL / KQL) and cloud attack paths
 [ mindset     ]  A false positive wastes an analyst's day; a false negative ends a company's.
                  Build for both.
