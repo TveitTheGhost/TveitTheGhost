@@ -35,9 +35,22 @@ My work lives in private repositories while I build it out. This profile is the 
 
 ---
 
+### `>` flagship — GhostSOC
+
+**An integrated Security Operations Console that runs the whole toolkit against one
+synthetic intrusion — with live, click-to-triage alerts.** Press *Run scenario* and
+a fabricated multi-stage attack ("GhostBear") unfolds across every tool: phishing →
+password spray → endpoint execution → C2 beaconing → DNS exfil → web attack → cloud
+pivot. Each real tool fires, every finding normalizes into one alert model, the
+kill chain lights up, and ATT&CK coverage scores in real time. Localhost-only, zero
+network egress, 100% synthetic data — safe to run, and the one artifact that shows
+all these tools working *together*.
+
+---
+
 ### `>` arsenal
 
-Seventeen tools I've designed and built, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them on request.
+Seventeen tools behind the console, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them (or demo GhostSOC live) on request.
 
 **🛡️ Detection & Coverage**
 | Project | What it does |
@@ -100,7 +113,7 @@ Seventeen tools I've designed and built, grouped by what they do. Repositories a
 
 ```text
 [ in progress ]  Studying for CompTIA Security+
-[ building    ]  17 defensive tools shipped and counting — each tested end to end
+[ building    ]  17 tools + GhostSOC, the console that runs them all — each tested end to end
 [ learning    ]  Deeper SIEM query fluency (SPL / KQL) and cloud attack paths
 [ mindset     ]  A false positive wastes an analyst's day; a false negative ends a company's.
                  Build for both.
