@@ -37,17 +37,35 @@ My work lives in private repositories while I build it out. This profile is the 
 
 ### `>` arsenal
 
-Tools I've designed and built. Repositories are private while the collection matures — happy to walk through any of them on request.
+Ten tools I've designed and built, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them on request.
 
+**🛡️ Detection & Coverage**
 | Project | What it does |
 | :-- | :-- |
 | **detection-pipeline** | Detection-as-code: 20+ Sigma rules as unit-tested software, auto-converted to Splunk, Sentinel & Defender. |
-| **purple-harness** | Emulates ATT&CK techniques and proves the matching detection fired — validated coverage with a proof chain. |
+| **attack-coverage** | Threat-informed gap analysis — which of an adversary's ATT&CK techniques you *can't* see, as a Navigator heatmap. |
+| **kql-linter** | Catches broken or dangerously-broad SIEM queries (KQL/SPL) before they ship. |
+
+**🔎 Threat Intel & Incident Response**
+| Project | What it does |
+| :-- | :-- |
+| **ioc-extractor** | Turns a threat report into clean, de-fanged indicators + ATT&CK techniques. |
+| **log-normalizer** | Mixed, messy logs of any shape → one clean, ECS-aligned schema. |
+| **incident-timeline** | Normalized events → a reconstructed timeline that flags attack sequences. |
+
+**🟣 Offense & Validation**
+| Project | What it does |
+| :-- | :-- |
+| **purple-harness** | Emulates ATT&CK techniques and proves the matching detection fired — a validated proof chain. |
 | **attack-range** | Instrumented lab-as-code: free local Docker range + a guardrailed AWS Terraform range that can't overspend or expose itself. |
 | **iam-pathfinder** | Finds AWS IAM privilege-escalation paths by graph traversal — the chains that quietly lead to admin. |
-| **ioc-extractor** | Turns a threat report into clean, de-fanged indicators + ATT&CK techniques, ready to feed the pipeline. |
 
-<sub>One coherent loop: **intel → detection → attack → validation**, on infrastructure built to be safe by default.</sub>
+**🧬 Malware Analysis**
+| Project | What it does |
+| :-- | :-- |
+| **yara-tester** | Write malware-detection signatures *and unit-test them* — a dependency-free YARA-subset engine. |
+
+<sub>One coherent loop: **intel → detection → attack → validation**, on infrastructure built to be safe by default. Every tool ships with tests, CI, and a "what it does *not* do" section.</sub>
 
 ---
 
@@ -71,7 +89,7 @@ Tools I've designed and built. Repositories are private while the collection mat
 
 ```text
 [ in progress ]  Studying for CompTIA Security+
-[ building    ]  Expanding the arsenal — a new defensive tool at a time, tested end to end
+[ building    ]  10 defensive tools shipped and counting — each tested end to end
 [ learning    ]  Deeper SIEM query fluency (SPL / KQL) and cloud attack paths
 [ mindset     ]  A false positive wastes an analyst's day; a false negative ends a company's.
                  Build for both.
