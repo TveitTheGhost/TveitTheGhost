@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="TveitTheGhost — Building with AI, thinking like a defender">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b12"/>
+      <stop offset="0.55" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#0a1a1c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- base -->
+  <rect width="1280" height="340" fill="url(#bg)"/>
+
+  <!-- grid -->
+  <g stroke="#18324a" stroke-width="1" opacity="0.35">
+    <path d="M0 68 H1280 M0 136 H1280 M0 204 H1280 M0 272 H1280"/>
+    <path d="M80 0 V340 M240 0 V340 M400 0 V340 M560 0 V340 M720 0 V340 M880 0 V340 M1040 0 V340 M1200 0 V340"/>
+  </g>
+
+  <!-- accent bar -->
+  <rect x="0" y="0" width="8" height="340" fill="url(#accent)"/>
+
+  <!-- ghost glow -->
+  <circle cx="1040" cy="170" r="150" fill="url(#glow)"/>
+
+  <!-- ghost mark -->
+  <g transform="translate(970,86)">
+    <path d="M70 8
+             C112 8 148 44 148 96
+             L148 196
+             C148 206 136 210 130 202
+             L118 186 C114 181 106 181 102 186 L90 202 C86 207 78 207 74 202
+             L62 186 C58 181 50 181 46 186 L34 202 C28 210 16 206 16 196
+             L16 96 C16 44 28 8 70 8 Z"
+          fill="#0e1b2b" stroke="url(#accent)" stroke-width="3"/>
+    <circle cx="52" cy="92" r="12" fill="#22d3ee"/>
+    <circle cx="96" cy="92" r="12" fill="#34d399"/>
+    <circle cx="52" cy="92" r="4" fill="#04212b"/>
+    <circle cx="96" cy="92" r="4" fill="#04212b"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="60" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="#e6f6ff" letter-spacing="-1">
+    Tveit<tspan fill="url(#accent)">The</tspan>Ghost
+  </text>
+
+  <!-- tagline -->
+  <text x="62" y="176" font-family="Consolas, monospace" font-size="21" fill="#7fd7e6" letter-spacing="0.5">
+    Building with AI. Thinking like a defender.
+  </text>
+
+  <!-- tag chips -->
+  <g font-family="Consolas, monospace" font-size="15" fill="#0a0e14">
+    <g transform="translate(62,214)">
+      <rect width="200" height="34" rx="17" fill="#22d3ee"/>
+      <text x="20" y="23" font-weight="700">Detection Engineering</text>
+    </g>
+    <g transform="translate(276,214)">
+      <rect width="150" height="34" rx="17" fill="#34d399"/>
+      <text x="20" y="23" font-weight="700">Cloud Security</text>
+    </g>
+    <g transform="translate(440,214)">
+      <rect width="140" height="34" rx="17" fill="#8b5cf6"/>
+      <text x="18" y="23" font-weight="700" fill="#f5f3ff">Purple Team</text>
+    </g>
+  </g>
+
+  <!-- terminal prompt line -->
+  <text x="62" y="292" font-family="Consolas, monospace" font-size="16" fill="#5b7086">
+    <tspan fill="#34d399">ghost@soc</tspan><tspan fill="#5b7086">:~$ </tspan><tspan fill="#c8d6e5">hunt --map att&amp;ck --prove-detections</tspan><tspan fill="#22d3ee">_</tspan>
+  </text>
+</svg>
