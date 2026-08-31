@@ -37,7 +37,7 @@ My work lives in private repositories while I build it out. This profile is the 
 
 ### `>` arsenal
 
-Thirteen tools I've designed and built, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them on request.
+Seventeen tools I've designed and built, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them on request.
 
 **🛡️ Detection & Coverage**
 | Project | What it does |
@@ -53,7 +53,15 @@ Thirteen tools I've designed and built, grouped by what they do. Repositories ar
 | **ioc-extractor** | Turns a threat report into clean, de-fanged indicators + ATT&CK techniques. |
 | **log-normalizer** | Mixed, messy logs of any shape → one clean, ECS-aligned schema. |
 | **incident-timeline** | Normalized events → a reconstructed timeline that flags attack sequences. |
+| **email-header-analyzer** | Flags phishing by the email's headers — SPF/DKIM/DMARC, spoofing, look-alikes. |
+
+**🕵️ Threat Detection**
+| Project | What it does |
+| :-- | :-- |
 | **beacon-detector** | Finds malware C2 by spotting regular-interval traffic — behavioral, no signatures. |
+| **dns-exfil-detector** | Catches data smuggled through DNS via subdomain entropy + volume. |
+| **password-spray-detector** | Detects spraying — few attempts across many accounts, under the lockout radar. |
+| **weblog-attack-detector** | WAF-lite: scans web logs for SQLi, XSS, traversal, LFI, cmd injection & scanners. |
 
 **🟣 Offense & Validation**
 | Project | What it does |
@@ -92,7 +100,7 @@ Thirteen tools I've designed and built, grouped by what they do. Repositories ar
 
 ```text
 [ in progress ]  Studying for CompTIA Security+
-[ building    ]  13 defensive tools shipped and counting — each tested end to end
+[ building    ]  17 defensive tools shipped and counting — each tested end to end
 [ learning    ]  Deeper SIEM query fluency (SPL / KQL) and cloud attack paths
 [ mindset     ]  A false positive wastes an analyst's day; a false negative ends a company's.
                  Build for both.
