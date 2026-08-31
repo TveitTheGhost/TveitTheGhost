@@ -9,7 +9,7 @@ I build detection-as-code, cloud-security tooling, and purple-team labs — then
 
 <br>
 
-`detection engineering` &nbsp;·&nbsp; `SIEM & Sigma` &nbsp;·&nbsp; `MITRE ATT&CK` &nbsp;·&nbsp; `cloud security` &nbsp;·&nbsp; `purple teaming`
+`detection engineering` &nbsp;·&nbsp; `SIEM & Sigma` &nbsp;·&nbsp; `MITRE ATT&CK` &nbsp;·&nbsp; `threat intel` &nbsp;·&nbsp; `cloud security` &nbsp;·&nbsp; `purple teaming`
 
 </div>
 
@@ -30,7 +30,24 @@ My work lives in private repositories while I build it out. This profile is the 
 | 🛡️ **Detection Engineering** | Sigma rules as tested code — every rule ships with true-positive *and* true-negative fixtures, converted to Splunk, Sentinel & Defender. |
 | 🟣 **Purple Teaming** | Emulate an ATT&CK technique, capture the telemetry, and *prove* the detection fired — validated coverage, not assumed coverage. |
 | ☁️ **Cloud Security** | Attack-path analysis and IAM privilege-escalation hunting; infrastructure-as-code labs with cost & exposure guardrails baked in. |
+| 🔎 **Threat Intelligence** | Turning raw threat reports into structured, de-fanged indicators and ATT&CK techniques — the intel that informs new detections. |
 | 🤖 **Security + AI** | Using AI to move faster without cutting corners — and keeping a human in the loop wherever a wrong answer would matter. |
+
+---
+
+### `>` arsenal
+
+Tools I've designed and built. Repositories are private while the collection matures — happy to walk through any of them on request.
+
+| Project | What it does |
+| :-- | :-- |
+| **detection-pipeline** | Detection-as-code: 20+ Sigma rules as unit-tested software, auto-converted to Splunk, Sentinel & Defender. |
+| **purple-harness** | Emulates ATT&CK techniques and proves the matching detection fired — validated coverage with a proof chain. |
+| **attack-range** | Instrumented lab-as-code: free local Docker range + a guardrailed AWS Terraform range that can't overspend or expose itself. |
+| **iam-pathfinder** | Finds AWS IAM privilege-escalation paths by graph traversal — the chains that quietly lead to admin. |
+| **ioc-extractor** | Turns a threat report into clean, de-fanged indicators + ATT&CK techniques, ready to feed the pipeline. |
+
+<sub>One coherent loop: **intel → detection → attack → validation**, on infrastructure built to be safe by default.</sub>
 
 ---
 
@@ -54,7 +71,7 @@ My work lives in private repositories while I build it out. This profile is the 
 
 ```text
 [ in progress ]  Studying for CompTIA Security+
-[ building    ]  A purple-team detection portfolio — attack → detect → validate, end to end
+[ building    ]  Expanding the arsenal — a new defensive tool at a time, tested end to end
 [ learning    ]  Deeper SIEM query fluency (SPL / KQL) and cloud attack paths
 [ mindset     ]  A false positive wastes an analyst's day; a false negative ends a company's.
                  Build for both.
