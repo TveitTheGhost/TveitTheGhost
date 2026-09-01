@@ -50,7 +50,7 @@ all these tools working *together*.
 
 ### `>` arsenal
 
-Seventeen tools behind the console, grouped by what they do. Repositories are private while the collection matures — happy to walk through any of them (or demo GhostSOC live) on request.
+Twenty tools, grouped by what they do — now spanning **Python, PowerShell, and Node.js**. Repositories are private while the collection matures — happy to walk through any of them (or demo GhostSOC live) on request.
 
 **🛡️ Detection & Coverage**
 | Project | What it does |
@@ -59,6 +59,7 @@ Seventeen tools behind the console, grouped by what they do. Repositories are pr
 | **attack-coverage** | Threat-informed gap analysis — which of an adversary's ATT&CK techniques you *can't* see, as a Navigator heatmap. |
 | **sigma-linter** | Grades detection rules A–F on quality, ATT&CK mapping, and breadth — keeps the rule library healthy. |
 | **kql-linter** | Catches broken or dangerously-broad SIEM queries (KQL/SPL) before they ship. |
+| **sigma-arsenal** | A CI-validated Sigma rule library across Windows/Linux/cloud/web — every rule gated on ATT&CK mapping & quality. |
 
 **🔎 Threat Intel & Incident Response**
 | Project | What it does |
@@ -88,6 +89,12 @@ Seventeen tools behind the console, grouped by what they do. Repositories are pr
 | :-- | :-- |
 | **cloud-audit** | CSPM-lite — scans an AWS account for public buckets, open ports, MFA gaps & more, each with a fix. |
 | **yara-tester** | Write malware-detection signatures *and unit-test them* — a dependency-free YARA-subset engine. |
+
+**🧱 Hardening & AppSec**
+| Project | What it does |
+| :-- | :-- |
+| **win-hardening-audit** | Read-only Windows hardening auditor (PowerShell) — grades a host A–F against a CIS-style baseline. No data collected. |
+| **header-hawk** | Offline HTTP security-header analyzer (Node.js) — grades HSTS/CSP/cookies A–F, zero dependencies. |
 
 <sub>One coherent loop: **intel → detection → attack → validation**, on infrastructure built to be safe by default. Every tool ships with tests, CI, and a "what it does *not* do" section.</sub>
 
