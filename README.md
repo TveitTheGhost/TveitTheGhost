@@ -8,6 +8,7 @@
 
 <br>
 
+<a href="https://tveittheghost.github.io/"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Portfolio-tveittheghost.github.io-06b6d4?style=flat-square" alt="Portfolio"></a>
 <img src="https://img.shields.io/badge/%F0%9F%93%8D_Based_on-Earth_%F0%9F%8C%8D-7c3aed?style=flat-square" alt="Based on Earth">
 <img src="https://img.shields.io/badge/Status-Building_daily-06b6d4?style=flat-square" alt="Building daily">
 <img src="https://komarev.com/ghpvc/?username=TveitTheGhost&color=7c3aed&style=flat-square&label=Profile+views" alt="Profile views">
@@ -51,9 +52,9 @@ const tveit = {
 | 🍅 | **Pomodoro Timer** | Focus timer with an animated progress ring, auto break cycle and a generated chime | JavaScript · SVG · Web Audio |
 | ✅ | **To-Do** | Task manager with priorities, filters, inline editing and dark mode | JavaScript · localStorage |
 | ❌ | **Tic-Tac-Toe** | The classic, plus an AI opponent that can't be beaten (minimax) | JavaScript · Algorithms |
-| 👻 | **Portfolio** | My personal site showing all of the above | HTML · CSS · JavaScript |
+| 👻 | **[Portfolio](https://tveittheghost.github.io/)** | My personal site showing all of the above. **[Visit it live →](https://tveittheghost.github.io/)** | HTML · CSS · JavaScript |
 
-> 🔒 These repos are private while I polish them. Public versions are coming soon.
+> 🔒 The project repos are private while I polish them. Public versions are coming soon.
 
 ### 🔭 Currently exploring
 
@@ -67,6 +68,8 @@ const tveit = {
 <div align="center">
 
 **Always up for a new project, a code review, or talking shop.**
+
+<a href="https://tveittheghost.github.io/"><img src="https://img.shields.io/badge/Visit_my_portfolio-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit my portfolio"></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,100:7c3aed&height=100&section=footer" alt="" width="100%">
 
