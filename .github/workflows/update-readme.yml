@@ -1,6 +1,8 @@
 name: Update project table
 
 # Rebuilds the "What I've built" table from the portfolio's projects.json.
+# The local sync script (ClaudeCodeWork/tools/sync-showcase.mjs) updates it right after
+# every push; this daily run is the backup and expires old "new" badges.
 on:
   schedule:
     - cron: "17 6 * * *" # daily
@@ -21,6 +23,8 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Rebuild project table
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/update-readme.mjs
 
       - name: Commit if changed
@@ -32,4 +36,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -am "Update project table from portfolio"
+          # The local sync script may have pushed meanwhile; replay this commit on top.
+          git pull --rebase --quiet
           git push
